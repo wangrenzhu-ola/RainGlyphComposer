@@ -1,0 +1,14 @@
+[
+  {
+    "id": "quiet-window",
+    "title": "Quiet Window Tap",
+    "localAssetName": "rain.window.quiet",
+    "disclosureCopy": "Local starter example only. Create your own rain glyph score to save personal rain-tap details."
+  },
+  {
+    "id": "roof-drum",
+    "title": "Roof Drum Pattern",
+    "localAssetName": "rain.roof.drum",
+    "disclosureCopy": "Local starter example only. It never claims live rain detection or online content."
+  }
+]

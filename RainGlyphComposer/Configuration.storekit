@@ -1,0 +1,33 @@
+{
+  "identifier" : "com.rainglyph.composer.storekit",
+  "nonRenewingSubscriptions" : [
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "rainglyph-premium-local-packs",
+      "localizations" : [
+        {
+          "description" : "Unlock local rain window, density bead, and glyph staff theme packs.",
+          "displayName" : "Premium Local Packs",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.rainglyph.composer.premium.localpacks",
+      "referenceName" : "Premium Local Packs",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "rainglyph-composer",
+    "_developerTeamID" : "",
+    "_lastSynchronizedDate" : 741484800
+  },
+  "subscriptionGroups" : [
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
