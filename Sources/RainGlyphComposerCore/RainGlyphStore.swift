@@ -111,8 +111,8 @@ public final class RainGlyphStore: ObservableObject {
         if !explicit.isEmpty { return Array(Set(explicit)).sorted() }
         let tokens = draft.tapFeeling
             .split { $0 == " " || $0 == "," || $0 == "." || $0 == "\n" || $0 == "\t" }
-            .map { $0.lowercased() }
-        return Array(tokens.prefix(5)).map(String.init)
+            .map { String($0).lowercased() }
+        return tokens.enumerated().compactMap { index, token in index < 5 ? token : nil }
     }
 
     private static func defaultStoreURL() -> URL {
