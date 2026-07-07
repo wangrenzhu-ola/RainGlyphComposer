@@ -24,7 +24,7 @@ public struct PremiumLocalPacksView: View {
             }
             .background(RainGlyphPalette.cloud.ignoresSafeArea())
             .navigationTitle("Premium Local Packs")
-            .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } } }
+            .toolbar { Button("Done") { dismiss() } }
             .task { await premiumStore.loadProducts() }
         }
     }

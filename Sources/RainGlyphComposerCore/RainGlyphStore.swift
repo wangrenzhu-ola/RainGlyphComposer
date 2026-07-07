@@ -109,11 +109,10 @@ public final class RainGlyphStore: ObservableObject {
     private static func normalizedTags(from draft: RainGlyphDraft) -> [String] {
         let explicit = draft.domainTags.map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }.filter { !$0.isEmpty }
         if !explicit.isEmpty { return Array(Set(explicit)).sorted() }
-        return draft.tapFeeling
+        let tokens = draft.tapFeeling
             .split { $0 == " " || $0 == "," || $0 == "." || $0 == "\n" || $0 == "\t" }
             .map { $0.lowercased() }
-            .prefix(5)
-            .map(String.init)
+        return Array(tokens.prefix(5)).map(String.init)
     }
 
     private static func defaultStoreURL() -> URL {

@@ -23,14 +23,10 @@ public struct RainScoreShelfView: View {
         .background(RainGlyphPalette.cloud.ignoresSafeArea())
         .navigationTitle("Rain Score Shelf")
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button("Premium", systemImage: "sparkles", action: onPremium)
-                    .accessibilityLabel("Open Premium Local Packs")
-            }
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("New", systemImage: "plus", action: onCreate)
-                    .accessibilityLabel("Create a rain glyph score")
-            }
+            Button("Premium", systemImage: "sparkles", action: onPremium)
+                .accessibilityLabel("Open Premium Local Packs")
+            Button("New", systemImage: "plus", action: onCreate)
+                .accessibilityLabel("Create a rain glyph score")
         }
     }
 
