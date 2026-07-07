@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-07-07T13:58:48Z",
+  "source_files": [
+    {
+      "contains_rain_glyph": true,
+      "line_count": 132,
+      "path": "Sources/RainGlyphComposerCore/Models.swift"
+    },
+    {
+      "contains_rain_glyph": true,
+      "line_count": 142,
+      "path": "Sources/RainGlyphComposerCore/RainGlyphStore.swift"
+    },
+    {
+      "contains_rain_glyph": true,
+      "line_count": 147,
+      "path": "Sources/RainGlyphComposerCore/RainScoreShelfView.swift"
+    },
+    {
+      "contains_rain_glyph": true,
+      "line_count": 141,
+      "path": "Sources/RainGlyphComposerCore/RainTapSetupView.swift"
+    },
+    {
+      "contains_rain_glyph": true,
+      "line_count": 183,
+      "path": "Sources/RainGlyphComposerCore/GlyphStaffComposerView.swift"
+    },
+    {
+      "contains_rain_glyph": true,
+      "line_count": 117,
+      "path": "Sources/RainGlyphComposerCore/RainGlyphScoreDetailView.swift"
+    },
+    {
+      "contains_rain_glyph": true,
+      "line_count": 92,
+      "path": "Sources/RainGlyphComposerCore/PremiumLocalPacksView.swift"
+    },
+    {
+      "contains_rain_glyph": true,
+      "line_count": 59,
+      "path": "Sources/RainGlyphComposerCore/AppIntentIntegration.swift"
+    },
+    {
+      "contains_rain_glyph": true,
+      "line_count": 50,
+      "path": "RainGlyphComposer/RainGlyphComposerApp.swift"
+    },
+    {
+      "contains_rain_glyph": false,
+      "line_count": 24,
+      "path": "RainGlyphComposer/PrivacyInfo.xcprivacy"
+    },
+    {
+      "contains_rain_glyph": false,
+      "line_count": 34,
+      "path": "RainGlyphComposer/Configuration.storekit"
+    },
+    {
+      "contains_rain_glyph": true,
+      "line_count": 67,
+      "path": "Tests/RainGlyphComposerCoreTests/RainGlyphComposerCoreTests.swift"
+    }
+  ]
+}

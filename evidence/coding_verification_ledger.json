@@ -1,0 +1,223 @@
+{
+  "app_name": "RainGlyph Composer",
+  "build_checks": [
+    {
+      "command": "swift test",
+      "evidence_ref": "evidence/swift_test.log",
+      "exit_code": 0,
+      "name": "swift test"
+    },
+    {
+      "command": "xcodebuild -list -project RainGlyphComposer.xcodeproj",
+      "evidence_ref": "evidence/xcodebuild_list.log",
+      "exit_code": 0,
+      "name": "xcodebuild list"
+    },
+    {
+      "command": "xcodebuild -project RainGlyphComposer.xcodeproj -scheme RainGlyphComposer -destination platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5 -derivedDataPath DerivedData CODE_SIGNING_ALLOWED=NO build",
+      "evidence_ref": "evidence/xcodebuild_build.log",
+      "exit_code": 0,
+      "name": "xcodebuild simulator build"
+    }
+  ],
+  "completion_decision": "rough_built",
+  "design_results": [
+    {
+      "design_gate": "5 main screens",
+      "evidence_refs": [
+        "Rain Score Shelf",
+        "Rain Tap Setup",
+        "Glyph Staff Composer",
+        "Rain Glyph Score Detail",
+        "Premium Local Packs"
+      ],
+      "status": "pass"
+    },
+    {
+      "design_gate": "product-specific visual slots",
+      "evidence_refs": [
+        "RainWindowHero",
+        "DensityBeadRow",
+        "GlyphStaffPreview",
+        "evidence/rainglyph_shelf_runtime.png"
+      ],
+      "status": "pass"
+    },
+    {
+      "design_gate": "en-US accessibility labels",
+      "evidence_refs": [
+        "SwiftUI accessibility labels across interactive controls"
+      ],
+      "status": "pass"
+    },
+    {
+      "design_gate": "taste pass",
+      "evidence_refs": [
+        "calm ritual utility style fingerprint with moss/brass/cloud palette; no generic blue/purple AI-gradient route"
+      ],
+      "status": "pass"
+    }
+  ],
+  "generated_at": "2026-07-07T13:58:48Z",
+  "known_gaps": [],
+  "pm_inputs_read": [
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/rough_app_runs/goal-006-rainglyph-composer-1349eff1fd/rough_app_goal.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/goal_manifest.json",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/package_goal_map.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/acceptance_matrix.json",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/design_blueprint.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/pm_brief.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/current_version_requirements.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/acceptance_gates.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/design_qa_gates.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/product_goal.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/feature_blocks.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/acceptance.md",
+    "/Users/wangrenzhu/.local/state/app-factory-command-center/agent_gateway/jobs/codex-factory-control-singleton/PMAgent/product_goal_bundles/goal-006-rainglyph-composer/market_signal_audit.md"
+  ],
+  "repo_path": "/Users/wangrenzhu/work/RainGlyphComposer",
+  "repo_url": "",
+  "requirement_results": [
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "RainTapSetupView.swift",
+        "GlyphStaffComposerView.swift",
+        "RainGlyphScoreDetailView.swift",
+        "RainGlyphComposerCoreTests.swift::testCreateEditDeletePersistsRainGlyphScore"
+      ],
+      "pass_condition": "User can create/edit/delete rain glyph score.",
+      "requirement_id": "REQ-CRUD-001",
+      "status": "pass"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "RainGlyphStore.swift JSON persistence",
+        "RainGlyphComposerCoreTests.swift::reloaded store assertion"
+      ],
+      "pass_condition": "Saved rain glyph score persists after relaunch.",
+      "requirement_id": "REQ-PERSIST-001",
+      "status": "pass"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "RainGlyphVisualComponents.swift RainWindowHero/DensityBeadRow/GlyphStaffPreview",
+        "evidence/rainglyph_shelf_runtime.png"
+      ],
+      "pass_condition": "Normal flow shows \u96e8\u7a97 hero\u3001\u5bc6\u5ea6\u73e0\u3001glyph staff.",
+      "requirement_id": "REQ-VIS-001",
+      "status": "pass"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "RainScoreShelfView.swift EmptyRainScoreShelfView",
+        "evidence/rainglyph_shelf_runtime.png"
+      ],
+      "pass_condition": "Empty state is specific to rain glyph score.",
+      "requirement_id": "REQ-EMPTY-001",
+      "status": "pass"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "GlyphStaffComposerView.swift simulate save failure toggle/retry",
+        "RainGlyphComposerCoreTests.swift::testSimulatedSaveFailurePreservesDraftAndStore"
+      ],
+      "pass_condition": "Save failure preserves rain glyph score draft.",
+      "requirement_id": "REQ-ERROR-001",
+      "status": "pass"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "RainScoreShelfView.swift PrivacyBoundaryCard",
+        "RainGlyphComposer/PrivacyInfo.xcprivacy"
+      ],
+      "pass_condition": "Privacy boundary: rain glyph score data stays local; starter content disclosed.",
+      "requirement_id": "REQ-PRIVACY-001",
+      "status": "pass"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "PremiumLocalPacksView.swift non-blocking StoreKit controls",
+        "PremiumStore.swift product id",
+        "RainGlyphComposer/Configuration.storekit"
+      ],
+      "pass_condition": "StoreKit 2 Premium local packs do not block rain glyph score creation.",
+      "requirement_id": "REQ-PREMIUM-001",
+      "status": "pass"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "RainTapSetupView.swift Suggest from rain taps",
+        "RainGlyphDraftParser.draft(from:)",
+        "RainGlyphComposerCoreTests.swift::testSystemAssistedDraftParserIsEditableAndSpecific"
+      ],
+      "pass_condition": "System-assisted draft suggestions for rain glyph score are editable/skippable/user-confirmed.",
+      "requirement_id": "REQ-AI-001",
+      "status": "pass"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "RainGlyphComposerApp.swift OpenRainGlyphDraftIntent/AppShortcutsProvider",
+        "xcodebuild_build.log AppIntents metadata extraction"
+      ],
+      "pass_condition": "App Intent creates editable rain glyph score draft with manual fallback.",
+      "requirement_id": "REQ-APPINTENT-001",
+      "status": "pass"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        "English en-US user-visible SwiftUI strings",
+        "Package.swift defaultLocalization en",
+        "xcodebuild_build.log no localization failure"
+      ],
+      "pass_condition": "All user-visible copy and metadata are English (United States) / en-US.",
+      "requirement_id": "REQ-LOCALE-001",
+      "status": "pass"
+    }
+  ],
+  "run_id": "goal-006-rainglyph-composer-1349eff1fd",
+  "runtime_checks": [
+    {
+      "command": "xcrun simctl install/launch/io screenshot booted",
+      "evidence_refs": [
+        "evidence/simulator_runtime.log",
+        "evidence/rainglyph_shelf_runtime.png"
+      ],
+      "exit_code": 0,
+      "name": "simulator install launch screenshot"
+    }
+  ],
+  "schema_version": "appfactory.coding_verification_ledger.v1",
+  "source_commits": [
+    {
+      "commit": "6c6e7408e694bcc6fc1afeec73cf5cf5e9dbfb4a",
+      "subject": "Expose RainGlyph quick draft App Shortcut in app target"
+    },
+    {
+      "commit": "a122a868b5692faa65ad8851a73492aad34cc249",
+      "subject": "Stabilize rain tag normalization"
+    },
+    {
+      "commit": "e33a47808670e602349e788abeb37b69551635f4",
+      "subject": "Fix cross-platform Swift package compilation"
+    },
+    {
+      "commit": "6359b29e1b0ae79a84c0ba18bd68882a5d105d3e",
+      "subject": "Implement RainGlyph Composer SwiftUI flows"
+    },
+    {
+      "commit": "6f09a4304d70ace1d37d8b07d9174f7cfa9ac10c",
+      "subject": "Create RainGlyph Composer repository scaffold"
+    }
+  ],
+  "xcodeproj_ref": "/Users/wangrenzhu/work/RainGlyphComposer/RainGlyphComposer.xcodeproj"
+}

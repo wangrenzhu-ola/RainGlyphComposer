@@ -1,0 +1,10 @@
+runtime_check_started=2026-07-07T13:57:55Z
+swift_test_exit=0
+xcodebuild_list_exit=0
+app_path=/Users/wangrenzhu/work/RainGlyphComposer/DerivedData/Build/Products/Debug-iphonesimulator/RainGlyphComposer.app
+com.appfactory.rainglyphcomposer: 94195
+Detected file type from extension: PNG
+Note: No display specified. Defaulting to display: 842BDB92-EE38-454D-8CEF-82F4AB221A27 (screenID: 1, name: LCD)
+Wrote screenshot to: /Users/wangrenzhu/work/RainGlyphComposer/evidence/rainglyph_shelf_runtime.png
+screenshot=evidence/rainglyph_shelf_runtime.png
+runtime_check_finished=2026-07-07T13:57:59Z

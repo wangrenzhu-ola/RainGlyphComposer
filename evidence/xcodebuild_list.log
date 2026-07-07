@@ -1,0 +1,23 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -list -project RainGlyphComposer.xcodeproj
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  RainGlyphComposer: /Users/wangrenzhu/work/RainGlyphComposer @ local
+
+Information about project "RainGlyphComposer":
+    Targets:
+        RainGlyphComposer
+
+    Build Configurations:
+        Debug
+        Release
+
+    If no build configuration is specified and -scheme is not passed then "Release" is used.
+
+    Schemes:
+        RainGlyphComposer
+        RainGlyphComposerCore
+

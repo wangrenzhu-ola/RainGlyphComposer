@@ -1,0 +1,23 @@
+[0/1] Planning build
+Building for debugging...
+[0/2] Write swift-version--58304C5D6DBC2206.txt
+Build complete! (0.15s)
+Test Suite 'All tests' started at 2026-07-07 21:57:53.532.
+Test Suite 'RainGlyphComposerPackageTests.xctest' started at 2026-07-07 21:57:53.534.
+Test Suite 'RainGlyphComposerCoreTests' started at 2026-07-07 21:57:53.534.
+Test Case '-[RainGlyphComposerCoreTests.RainGlyphComposerCoreTests testCreateEditDeletePersistsRainGlyphScore]' started.
+Test Case '-[RainGlyphComposerCoreTests.RainGlyphComposerCoreTests testCreateEditDeletePersistsRainGlyphScore]' passed (0.006 seconds).
+Test Case '-[RainGlyphComposerCoreTests.RainGlyphComposerCoreTests testSimulatedSaveFailurePreservesDraftAndStore]' started.
+Test Case '-[RainGlyphComposerCoreTests.RainGlyphComposerCoreTests testSimulatedSaveFailurePreservesDraftAndStore]' passed (0.001 seconds).
+Test Case '-[RainGlyphComposerCoreTests.RainGlyphComposerCoreTests testSystemAssistedDraftParserIsEditableAndSpecific]' started.
+Test Case '-[RainGlyphComposerCoreTests.RainGlyphComposerCoreTests testSystemAssistedDraftParserIsEditableAndSpecific]' passed (0.000 seconds).
+Test Suite 'RainGlyphComposerCoreTests' passed at 2026-07-07 21:57:53.540.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.006) seconds
+Test Suite 'RainGlyphComposerPackageTests.xctest' passed at 2026-07-07 21:57:53.540.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
+Test Suite 'All tests' passed at 2026-07-07 21:57:53.540.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.
